@@ -8,7 +8,7 @@ import store from './store/store.js';
 import Header from './components/Header.js';
 import { BrowserRouter as Router } from 'react-router-dom'; // Import Router
 
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+// import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 import './i18n/i18n'; // Import i18n configuration
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -27,7 +27,7 @@ root.render(
 );
 
 // Register the service worker
-serviceWorkerRegistration.register();
+// serviceWorkerRegistration.register();
 
 // Optional: Report web vitals
 reportWebVitals();
