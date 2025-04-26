@@ -49,7 +49,7 @@ const AdminEventPage = () => {
   const [formErrors, setFormErrors] = useState({});
   const { t } = useTranslation(); // Add t function
 
-  const API_BASE_URL = 'http://localhost:5000';
+  const API_BASE_URL = 'https://edir-if1t.onrender.com';
 
   useEffect(() => {
     fetchData();

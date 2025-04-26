@@ -26,7 +26,7 @@ const Home = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const testimonialsPerPage = 3;
 
-  const API_BASE_URL = 'http://localhost:5000';
+  const API_BASE_URL = 'https://edir-if1t.onrender.com';
 
   const fetchImpactData = async () => {
     setLoading(true);

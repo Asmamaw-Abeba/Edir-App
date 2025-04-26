@@ -18,7 +18,7 @@ router.post('/payment/initialize', async (req, res) => {
     return res.status(400).json({ status: 'error', message: req.t('payment.missing_fields') });
   }
 
-  const CALLBACK_URL = 'http://localhost:5000/api/verify-payment/';
+  const CALLBACK_URL = 'https://edir-if1t.onrender.com/api/verify-payment/';
   const RETURN_URL = 'http://localhost:3000/contributions/'; // Ensure this is correct
 
   const data = {

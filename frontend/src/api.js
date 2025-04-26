@@ -3,7 +3,7 @@ import axios from 'axios';
 import i18n from './i18n/i18n.js'; // Your i18n configuration file
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000', // Your backend base URL
+  baseURL: 'https://edir-if1t.onrender.com', // Your backend base URL
   withCredentials: true, // Include cookies (e.g., for JWT in your auth routes)
 });
 

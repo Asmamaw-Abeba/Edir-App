@@ -9,7 +9,7 @@ import './css/ResetContact.css';
 import { useTranslation } from 'react-i18next'; // Add translation hook
 
 // Use environment variable or config for API base URL
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const API_URL = process.env.REACT_APP_API_URL || 'https://edir-if1t.onrender.com';
 
 const ResetContact = () => {
   const [newContact, setNewContact] = useState('');

@@ -15,7 +15,7 @@ const Members = () => {
   const [loading, setLoading] = useState(true);
   const [isOnline, setIsOnline] = useState(navigator.onLine);
 
-  const API_BASE_URL = 'http://localhost:5000';
+  const API_BASE_URL = 'https://edir-if1t.onrender.com';
 
   const roles = ['member', 'dagna', 'gebez', 'admin']; // Define your roles
 

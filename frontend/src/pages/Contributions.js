@@ -54,7 +54,7 @@ const Contributions = ({ events = [] }) => {
   const [showChart, setShowChart] = useState(false);
   const chartRef = useRef(null);
 
-  const API_BASE_URL = 'http://localhost:5000';
+  const API_BASE_URL = 'https://edir-if1t.onrender.com';
 
   useEffect(() => {
     if (showChart && chartRef.current) {

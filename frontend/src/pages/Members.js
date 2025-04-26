@@ -65,7 +65,7 @@ const Members = () => {
   const [deleteDialogOpen, setDeleteDialogOpen] = useState(false);
   const [memberToDelete, setMemberToDelete] = useState(null);
 
-  const API_BASE_URL = 'http://localhost:5000';
+  const API_BASE_URL = 'https://edir-if1t.onrender.com';
   const roles = ['member', 'dagna', 'gebez', 'admin'];
 
   useEffect(() => {

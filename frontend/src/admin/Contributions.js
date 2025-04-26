@@ -25,7 +25,7 @@ const Contributions = ({ events = [] }) => {
   const [loading, setLoading] = useState(true);
   const [filterEventId, setFilterEventId] = useState('all');
 
-  const API_BASE_URL = 'http://localhost:5000';
+  const API_BASE_URL = 'https://edir-if1t.onrender.com';
 
   useEffect(() => {
     fetchData();
