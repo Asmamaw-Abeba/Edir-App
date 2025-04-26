@@ -1,0 +1,105 @@
+{
+  "auth": {
+    "unauthorized_no_token": "ፍቃድ የለም፡ ምንም ቶከን አልተሰጠም",
+    "unauthorized_invalid_token": "ፍቃድ የለም፡ ልክ ያልሆነ ቶከን",
+    "register": {
+      "success": "አባል በተሳካ ሁኔታ ተመዝግቧል",
+      "exists": "ይህ ግንኙነት ያለው አባል ቀድሞውኑ አለ",
+      "server_error": "የአገልጋይ ስህተት",
+      "validation": {
+        "name": "ስም ከ2-50 ቁምፊዎች መሆን አለበት እና ፊደሎች፣ ክፍተቶች፣ መለያዎች ወይም አፖስትሮፊዎች ብቻ መያዝ አለበት",
+        "contact": "ትክክለኛ የኢትዮጵያ ስልክ ቁጥር መሆን አለበት (ለምሳሌ፡ 0912345678 ወይም +251912345678)",
+        "password": "የይለፍ ቃል ቢያንስ 8 ቁምፊዎች መሆን አለበት",
+        "role": "ሚና መሆን ያለበት \"አባል\" ወይም \"አስተዳዳሪ\" ነው"
+      }
+    },
+    "login": {
+      "success": "መግባት ተሳክቷል",
+      "invalid_credentials": "ልክ ያልሆኑ መረጃዎች",
+      "server_error": "የአገልጋይ ስህተት",
+      "validation": {
+        "name_required": "ስም ያስፈልጋል",
+        "contact_required": "ግንኙነት ያስፈልጋል",
+        "password_required": "የይለፍ ቃል ያስፈልጋል",
+        "role": "ሚና መሆን ያለበት \"አባል\" ወይም \"አስተዳዳሪ\" ነው"
+      }
+    },
+    "logout": {
+      "success": "መውጣት ተሳክቷል"
+    },
+    "protected": {
+      "success": "መዳረሻ ተሰጥቷል"
+    }
+  },
+
+  "contact": {
+    "fetch_error": "ግንኙነቶችን መጥራት ላይ ስህተት",
+    "add_success": "ግንኙነት በተሳካ ሁኔታ ተጨምሯል",
+    "add_error": "ግንኙነት መጨመር ላይ ስህተት",
+    "validation_error": "የማረጋገጫ ስህተት"
+  },
+
+  "forgot_contact": {
+    "contact_required": "ግንኙነት ያስፈልጋል",
+    "member_not_found": "አባል አልተገኘም",
+    "member_found": "አባል ተገኝቷል፣ እባክዎ ያሻሽሉ",
+    "server_error": "የአገልጋይ ስህተት"
+  },
+  "reset_contact": {
+    "token_required": "ቶክን ያስፈልጋል",
+    "new_contact_required": "አዲስ ግንኙነት ያስፈልጋል",
+    "token_expired": "ቶክን ጊዜው አልፎበታል",
+    "invalid_token": "ልክ ያልሆነ ቶክን",
+    "invalid_token_member_not_found": "ልክ ያልሆነ ቶክን - አባል አልተገኘም",
+    "success": "ግንኙነት በተሳካ ሁኔታ ተቀይሯል",
+    "error": "ግንኙነት መቀየር ላይ ስህተት"
+  },
+
+  "contributions": {
+    "fetch_error": "አስተዋፅዖችን መጥራት ላይ ስህተት",
+    "add_success": "አስተዋፅዖ በተሳካ ሁኔታ ተጨምሯል",
+    "add_error": "አስተዋፅዖ መጨመር ላይ ስህተት",
+    "validation_error": "የማረጋገጫ ስህተት"
+  },
+
+  "events": {
+    "fetch_error": "ክስተቶችን መጥራት ላይ ስህተት",
+    "add_success": "ክስተት በተሳካ ሁኔታ ተጨምሯል",
+    "add_error": "ክስተት መጨመር ላይ ስህተት",
+    "update_success": "ክስተት በተሳካ ሁኔታ ተዘምኗል",
+    "not_found": "ክስተት አልተገኘም",
+    "delete_success": "ክስተት በተሳካ ሁኔታ ተሰርዟል",
+    "server_error": "የአገልጋይ ስህተት",
+    "attendance_updated": "ተሳትፎ በተሳካ ሁኔታ ተዘምኗል",
+    "attendance_error": "ተሳትፎ መዘመን ላይ ስህተት",
+    "attendance": {
+      "member_id_required": "የአባል መለያ ያስፈልጋል"
+    },
+    "validation": {
+      "name_required": "የክስተት ስም ያስፈልጋል",
+      "date_invalid": "ትክክለኛ ቀን ያስፈልጋል",
+      "requires_contribution_boolean": "አስተዋፅዖ መጠየቅ ቡሊያን መሆን አለበት"
+    }
+  },
+
+  "members": {
+    "fetch_error": "አባላትን መጥራት ላይ ስህተት",
+    "add_success": "አባል በተሳካ ሁኔታ ተጨምሯል",
+    "add_error": "አባል መጨመር ላይ ስህተት",
+    "validation_error": "የማረጋገጫ ስህተት",
+    "update_success": "አባል በተሳካ ሁኔታ ተዘምኗል",
+    "update_error": "አባል መዘመን ላይ ስህተት",
+    "not_found": "አባል አልተገኘም",
+    "delete_success": "አባል በተሳካ ሁኔታ ተሰርዟል",
+    "delete_error": "አባል መሰረዝ ላይ ስህተት"
+  },
+
+  "payment": {
+    "missing_fields": "የግዴታ መስኮች ጠፍተዋል",
+    "initialize_success": "ክፍያ በተሳካ ሁኔታ ጀምሯል",
+    "initialize_error": "ክፍያ መጀመር አልተሳካም",
+    "verify_success": "ክፍያ በተሳካ ሁኔታ ተረጋግጧል",
+    "verify_failed": "ክፍያ አልተረጋገጠም",
+    "verify_error": "ክፍያ መረጋገጥ አልተሳካም"
+  }
+}

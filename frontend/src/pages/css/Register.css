@@ -1,0 +1,97 @@
+/* Register Page Styles */
+.register {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.register h1 {
+  font-size: 2rem;
+  color: #4e54c8;
+  margin-bottom: 20px;
+}
+
+.register .error {
+  color: #ff6f61;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.register form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register input,
+.register select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.register input:focus,
+.register select:focus {
+  border-color: #4e54c8;
+}
+
+.register button {
+  padding: 10px;
+  background: #4e54c8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.register button:hover {
+  background: #3a3f9e;
+}
+
+.register p {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.register a {
+  color: #4e54c8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .register {
+    padding: 15px;
+  }
+
+  .register h1 {
+    font-size: 1.5rem;
+  }
+
+  .register input,
+  .register select,
+  .register button {
+    font-size: 0.9rem;
+  }
+}
+
+/* Add this to Register.css */
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}

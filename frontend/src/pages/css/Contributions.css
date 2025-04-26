@@ -1,0 +1,385 @@
+/* Contributions.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contributions {
+  padding: 20px;
+  background: linear-gradient(135deg, #f4f4f4 0%, #e0e0e0 100%);
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #2e7d32; /* Ethiopian green */
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Add Button Styling */
+.MuiButton-containedPrimary {
+  background: #2e7d32;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  text-transform: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.MuiButton-containedPrimary:hover {
+  background: #1b5e20;
+  transform: translateY(-2px);
+}
+
+/* Contribution Form Styling */
+.contribution-form {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto 40px;
+  border-left: 5px solid #ffc107; /* Ethiopian yellow */
+}
+
+.contribution-form .MuiTypography-h6 {
+  color: #d32f2f; /* Ethiopian red */
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.contribution-form .MuiTextField-root,
+.contribution-form .MuiFormControl-root {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.contribution-form .MuiOutlinedInput-root {
+  border-radius: 8px;
+}
+
+.contribution-form .MuiOutlinedInput-notchedOutline {
+  border-color: #e0e0e0;
+}
+
+.contribution-form .Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #2e7d32;
+}
+
+.contribution-form .MuiInputLabel-root {
+  color: #616161;
+}
+
+.contribution-form .MuiInputLabel-root.Mui-focused {
+  color: #2e7d32;
+}
+
+.contribution-form .MuiFormHelperText-root,
+.contribution-form .MuiTypography-caption {
+  color: #d32f2f; /* Error text in Ethiopian red */
+  font-size: 0.85rem;
+}
+
+.contribution-form .MuiButton-containedPrimary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+/* Filter and Sort Section */
+.filter-sort {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Reduced gap for more filters */
+  justify-content: center;
+  margin-bottom: 30px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 1000px; /* Slightly wider for extra filter */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filter-sort label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem; /* Slightly smaller for compactness */
+  color: #424242;
+  flex: 1 1 220px; /* Adjusted for more filters */
+}
+
+.filter-sort select {
+  padding: 10px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+.filter-sort select:focus {
+  border-color: #2e7d32;
+  outline: none;
+}
+
+.filter-sort .fa-filter,
+.filter-sort .fa-sort {
+  color: #ffc107; /* Ethiopian yellow */
+  font-size: 1.2rem;
+}
+
+/* Summary Card */
+.summary-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 30px;
+  border-left: 4px solid #d32f2f; /* Ethiopian red */
+}
+
+.summary-card h3 {
+  color: #2e7d32;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.summary-card p {
+  color: #616161;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Contribution List */
+.contribution-list {
+  margin-bottom: 30px;
+}
+
+.contribution-list h2 {
+  color: #ffc107; /* Ethiopian yellow */
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.table-container {
+  max-height: 400px;
+  min-height: 250px;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.table-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background: #2e7d32;
+  border-radius: 4px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #2e7d32;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+td {
+  color: #616161;
+  font-size: 1rem;
+}
+
+tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tbody tr:hover {
+  background: #f1f1f1;
+}
+
+/* Report Section */
+.report-section {
+  margin-top: 40px;
+}
+
+.report-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.report-button {
+  background: #d32f2f; /* Ethiopian red */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.report-button:hover {
+  background: #b71c1c;
+  transform: translateY(-2px);
+}
+
+.chart-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.chart-container h3 {
+  color: #2e7d32;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Loading State */
+.loading {
+  text-align: center;
+  padding: 50px;
+  color: #616161;
+  font-size: 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading .MuiCircularProgress-root {
+  color: #ffc107; /* Ethiopian yellow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contributions {
+    padding: 15px;
+  }
+
+  .contribution-form {
+    max-width: 100%;
+  }
+
+  .filter-sort {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .filter-sort label {
+    flex: 1 1 auto;
+  }
+
+  .table-container {
+    min-height: 200px;
+  }
+
+  th,
+  td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .report-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .contribution-form .MuiTypography-h6 {
+    font-size: 1.5rem;
+  }
+
+  .contribution-form .MuiTextField-root,
+  .contribution-form .MuiFormControl-root {
+    margin-bottom: 10px;
+  }
+
+  .contribution-form .MuiButton-containedPrimary {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .filter-sort select {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .summary-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .summary-card p {
+    font-size: 1.5rem;
+  }
+
+  .contribution-list h2 {
+    font-size: 1.5rem;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  .report-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}

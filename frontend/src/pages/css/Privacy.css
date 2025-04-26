@@ -1,0 +1,39 @@
+.privacy {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.privacy-hero {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  color: white;
+  padding: 100px 20px;
+}
+
+.privacy-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.privacy-hero p {
+  font-size: 1.2rem;
+}
+
+.privacy-content {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.privacy-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.privacy-content p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,102 @@
+/* src/pages/css/ResetContact.css */
+
+.reset-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f8f8f8; /* Light background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+.reset-contact h1 {
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2em;
+  color: #d32f2f; /* Ethiopian flag red (darker shade) */
+}
+
+.reset-contact form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+.reset-contact input[type="text"] {
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.reset-contact button {
+  padding: 12px 20px;
+  background-color: #4CAF50; /* Ethiopian flag green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reset-contact button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+
+.reset-contact button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.reset-contact .error,
+.reset-contact .message {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.reset-contact .error {
+  background-color: #ffebee;
+  color: #d32f2f;
+  border: 1px solid #ef9a9a;
+}
+
+.reset-contact .message {
+  background-color: #e8f5e9;
+  color: #4CAF50;
+  border: 1px solid #a5d6a7;
+}
+
+/* Loading spinner */
+.reset-contact button svg {
+  margin-right: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .reset-contact h1 {
+    font-size: 1.8em;
+  }
+
+  .reset-contact input[type="contact"],
+  .reset-contact button {
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+
+  .reset-contact .error,
+  .reset-contact .message {
+    font-size: 15px;
+  }
+}

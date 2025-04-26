@@ -1,0 +1,171 @@
+/* Members.css */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;700&display=swap');
+
+/* Global container styling with Ethiopian-inspired colors */
+.members-container {
+  font-family: 'Noto Sans Ethiopic', sans-serif;
+  background: linear-gradient(135deg, #f9e8b2 0%, #ffffff 100%); /* Inspired by Ethiopian flag yellow and white */
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Typography */
+h4 {
+  color: #2e7d32; /* Green from Ethiopian flag */
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Button styling with Ethiopian cultural vibe */
+.MuiButton-containedPrimary {
+  background-color: #d32f2f; /* Red from Ethiopian flag */
+  color: #fff;
+  font-family: 'Noto Sans Ethiopic', sans-serif;
+  text-transform: none;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+}
+
+.MuiButton-containedPrimary:hover {
+  background-color: #b71c1c;
+}
+
+.MuiButton-outlined {
+  border-color: #2e7d32;
+  color: #2e7d32;
+}
+
+/* Search field styling */
+.MuiTextField-root {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.MuiInputAdornment-root svg {
+  color: #2e7d32;
+}
+
+/* Table Container */
+.MuiTableContainer-root {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow-x: auto;
+}
+
+/* Table Styling - Fix Header Alignment */
+.MuiTable-root {
+  width: 100%;
+  border-collapse: collapse; /* Ensures no gaps between cells */
+}
+
+.MuiTableHead-root {
+  background-color: #f9e8b2; /* Light yellow for header */
+}
+
+.MuiTableCell-head {
+  font-family: 'Noto Sans Ethiopic', sans-serif;
+  font-weight: 700;
+  color: #2e7d32;
+  padding: 12px 16px; /* Consistent padding */
+  text-align: left; /* Ensure consistent alignment */
+  border-bottom: 2px solid #d32f2f; /* Red border for emphasis */
+}
+
+/* Table Body Cells */
+.MuiTableCell-body {
+  font-family: 'Noto Sans Ethiopic', sans-serif;
+  padding: 12px 16px; /* Match header padding */
+  color: #333;
+  text-align: left; /* Match header alignment */
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Fix alignment by ensuring consistent column widths */
+.MuiTableCell-root {
+  min-width: 100px; /* Minimum width to prevent collapse */
+}
+
+/* Specific column widths for better alignment */
+.MuiTableCell-root:nth-child(1) { /* Name */
+  width: 35%;
+}
+
+.MuiTableCell-root:nth-child(2) { /* Contact */
+  width: 30%;
+}
+
+.MuiTableCell-root:nth-child(3) { /* Role */
+  width: 20%;
+}
+
+.MuiTableCell-root:nth-child(4) { /* Actions */
+  width: 15%;
+}
+
+/* Action Icons */
+.MuiIconButton-root {
+  padding: 6px;
+}
+
+.MuiIconButton-root svg {
+  font-size: 20px;
+}
+
+.MuiIconButton-root:hover {
+  background-color: rgba(46, 125, 50, 0.1); /* Green hover effect */
+}
+
+/* Drawer Styling */
+.MuiDrawer-paper {
+  background-color: #fff;
+  border-left: 3px solid #d32f2f;
+  padding: 20px;
+}
+
+/* Pagination */
+.MuiTablePagination-root {
+  font-family: 'Noto Sans Ethiopic', sans-serif;
+  color: #2e7d32;
+}
+
+/* Dialog */
+.MuiDialogTitle-root {
+  font-family: 'Noto Sans Ethiopic', sans-serif;
+  color: #d32f2f;
+}
+
+.MuiDialogContentText-root {
+  font-family: 'Noto Sans Ethiopic', sans-serif;
+  color: #333;
+}
+
+/* Toast Container */
+.Toastify__toast {
+  font-family: 'Noto Sans Ethiopic', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .MuiTableCell-root {
+    padding: 8px; /* Reduce padding on small screens */
+    font-size: 14px;
+  }
+
+  .MuiButton-containedPrimary {
+    padding: 6px 12px;
+  }
+
+  .MuiTextField-root {
+    width: 100%;
+  }
+
+  .MuiTableCell-root:nth-child(1),
+  .MuiTableCell-root:nth-child(2),
+  .MuiTableCell-root:nth-child(3),
+  .MuiTableCell-root:nth-child(4) {
+    width: auto; /* Allow flexibility on small screens */
+  }
+}

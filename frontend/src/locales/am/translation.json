@@ -1,0 +1,485 @@
+{
+  "header": {
+    "app_title": "እድር ኮኔክት",
+    "home": "መነሻ",
+    "members": "አባላት",
+    "contributions": "መዋጮዎች",
+    "events": "ዝግጅቶች",
+    "about": "ስለ እኛ",
+    "contact": "ያግኙን",
+    "login": "ግባ",
+    "register": "ይመዝገቡ",
+    "logout": "ውጣ"
+  },
+
+  "home": {
+    "welcome": "እንኳን ወደ እድር ኮኔክት በደህና መጡ",
+    "hero_description": "የእድር ማህበረሰቦችን በተሳካ ሁኔታ ለመቆጣጠር የእርስዎ ሁሉንም በአንድ መፍትሔ።",
+    "join_us": "አሁን ይቀላቀሉን",
+    "community_events": "የማህበረሰብ ዝግጅቶች",
+    "our_impact": "የእኛ ተፅእኖ",
+    "users": "ተጠቃሚዎች",
+    "events_managed": "የተቆጣጠሩ ዝግጅቶች",
+    "contributions": "መዋጮዎች",
+    "why_choose": "ለምን እድር ኮኔክትን መምረጥ?",
+    "what_users_say": "ተጠቃሚዎቻችን ምን ይላሉ",
+    "loading_testimonials": "የምስክር ወረቀቶችን በመጫን ላይ...",
+    "error_testimonials": "ስህተት፡ {{message}}",
+    "previous": "ቀዳሚ",
+    "next": "ቀጣይ",
+    "about_us": "ስለ እኛ",
+    "contact": "ያግኙን",
+    "privacy_policy": "የግላዊነት መመሪያ",
+    "footer_rights": "© 2023 እድር ኮኔክት። ሁሉም መብቶች የተጠበቁ ናቸው።"
+  },
+
+  "about": {
+    "hero_title": "ስለ እኛ",
+    "hero_description": "ስለ ተልዕኮአችን እና እድር ኮኔክት ጀርባ ስላለው ቡድን የበለጠ ይወቁ።",
+    "hero_button": "ጀምር",
+    "mission_title": "ተልዕኮአችን",
+    "mission_description": "ማህበረሰብ አስተዳደርን ቀላል ለማድረግ እና ጠንካራ ግንኙነቶችን ለመፍጠር እንፈልጋለን።",
+    "team_title": "ቡድናችን",
+    "team_members": [
+      { "name": "አስማማው አ.", "role": "መስራች እና ዋና ሥራ አስፈፃሚ" },
+      { "name": "አስማማው አ.", "role": "መሪ ገንቢ" },
+      { "name": "ሚኪያስ ሀ.", "role": "ዩአይ/ዩኤክስ ዲዛይነር" }
+    ]
+  },
+
+  "contact": {
+    "hero_title": "ያግኙን",
+    "hero_description": "ከእናንተ መስማት እንፈልጋለን! ለማንኛውም ጥያቄ ወይም ድጋፍ ያነጋግሩን።",
+    "form_title": "መልእክት ይላኩልን",
+    "name_placeholder": "ስምዎ",
+    "contact_placeholder": "የእርስዎ ግንኙነት (ለምሳሌ፡ 0912345678 ወይም +251912345678)",
+    "message_placeholder": "መልእክትዎ",
+    "send_button": "መልእክት ላክ",
+    "login_to_send": "መልእክት ለመላክ ይግቡ",
+    "sending": "በመላክ ላይ...",
+    "info_title": "የእኛ የግንኙነት መረጃ",
+    "email_label": "ኢሜል",
+    "phone_label": "ስልክ",
+    "address_label": "አድራሻ",
+    "email_value": "support@edirconnect.com",
+    "phone_value": "+251 912 345 678",
+    "address_value": "አዲስ አበባ፣ ኢትዮጵያ",
+    "char_count": "{{count}}/1000 ቁምፊዎች",
+    "validation": {
+      "name_required": "ስም ያስፈልጋል",
+      "name_invalid": "ስም ከ2-50 ቁምፊዎች መሆን አለበት እና ፊደሎች፣ ባዶ ቦታዎች፣ መለያዎች ወይም አፖስትሮፊዎች ብቻ መያዝ አለበት",
+      "contact_required": "ግንኙነት ያስፈልጋል",
+      "contact_invalid": "እባክዎ ትክክለኛ ኢሜል ወይም የኢትዮጵያ ስልክ ቁጥር ያስገቡ (ለምሳሌ፡ 0912345678 ወይም +251912345678)",
+      "message_required": "መልእክት ያስፈልጋል",
+      "message_too_short": "መልእክት ቢያንስ 10 ቁምፊዎች መሆን አለበት",
+      "message_too_long": "መልእክት 1000 ቁምፊዎችን መብለጥ አይችልም",
+      "form_errors": "እባክዎ ፎርሙን ከመላክዎ በፊት ስህተቶቹን ያስተካክሉ።",
+      "success": "መልእክት በተሳካ ሁኔታ ተልኳል!",
+      "error": "መልእክት መላክ አልተሳካም። እባክዎ ቆይተው እንደገና ይሞክሩ።"
+    }
+  },
+
+  "contributions": {
+    "title": "የመዋጮ መከታተያ",
+    "add_contribution": "መዋጮ መጨመር",
+    "hide_form": "ፎርም መደበቅ",
+    "form_title": "አዲስ መዋጮ መመዝገብ",
+    "event_name_label": "የዝግጅት ስም",
+    "member_name_label": "የአባል ስም",
+    "amount_label": "መጠን (ብር)",
+    "date_label": "ቀን",
+    "type_label": "አይነት",
+    "type_monthly": "ወርሃዊ",
+    "type_event": "ዝግጅት",
+    "type_other": "ሌላ",
+    "pay_now": "አሁን መክፈል",
+    "filter_by_type": "በአይነት መፈለግ",
+    "filter_by_event": "በዝግጅት መፈለግ",
+    "filter_by_member": "በአባል መፈለግ",
+    "sort_by": "መደርደር በ",
+    "filter_all": "ሁሉም",
+    "sort_date": "ቀን",
+    "sort_amount": "መጠን",
+    "total_contributions_title": "ጠቅላላ መዋጮዎች",
+    "contributions_title": "መዋጮዎች",
+    "no_contributions": "ምንም መዋጮዎች አልተገኙም።",
+    "table_member_name": "የአባል ስም",
+    "table_amount": "መጠን",
+    "table_date": "ቀን",
+    "table_event_name": "የዝግጅት ስም",
+    "table_type": "አይነት",
+    "report_chart_title": "የመዋጮ ሪፖርት በአባል",
+    "show_chart": "ሪፖርት ገበታ አሳይ",
+    "hide_chart": "ሪፖርት ገበታ መደበቅ",
+    "download_pdf": "ሪፖርት አውርድ (PDF)",
+    "report_title": "የመዋጮ ሪፖርት",
+    "report_total": "ጠቅላላ መዋጮዎች",
+    "report_generated": "የተፈጠረበት ቀን",
+    "loading": "በመጫን ላይ...",
+    "validation": {
+      "memberId_required": "የአባል ስም ያስፈልጋል",
+      "eventId_required": "የዝግጅት ስም ያስፈልጋል",
+      "amount_invalid": "እባክዎ ከ0 በላይ ያለ ትክክለኛ መጠን ያስገቡ",
+      "date_required": "ቀን ያስፈልጋል",
+      "date_future": "ቀን ወደፊት መሆን አይችልም",
+      "type_required": "አይነት ያስፈልጋል"
+    },
+    "toast": {
+      "fetch_error": "መዋጮዎችን መግኘት አልተሳካም።",
+      "load_error": "መረጃ መጫን አልተሳካም።",
+      "payment_init_error": "የክፍያ መጀመር አልተሳካም፡ የፍተሻ URL አልተቀበለም",
+      "payment_error": "የክፍያ መጀመር ስህተት፡ {{message}}",
+      "payment_verify_error": "የክፍያ ማረጋገጫ አልተሳካም፡ {{message}}",
+      "payment_success": "ክፍያ ተሳክቷል! መዋጮ ተጨምሯል።"
+    }
+  },
+
+  "events": {
+    "title": "ክስተቶች",
+    "upcoming_events": "መጪ ክስተቶች",
+    "past_events": "ያለፉ ክስተቶች",
+    "no_upcoming_events": "ምንም መጪ ክስተቶች አልተገኙም።",
+    "no_past_events": "ምንም ያለፉ ክስተቶች አልተገኙም።",
+    "reason_label": "ምክንያት",
+    "attendees_label": "ተሳታፊዎች",
+    "requires_contribution_label": "አስተዋፅዖ ይፈልጋል",
+    "yes": "አዎ",
+    "no": "አይ",
+    "view_attendees_button": "ተሳታፊዎችን ተመልከት",
+    "contribute_button": "አስተዋፅዖ አድርግ",
+    "contributions_title": "አስተዋፅዖዎች",
+    "contributors_suffix": "አስተዋፅዖ አድራጊዎች",
+    "no_contributions": "እስካሁን ምንም አስተዋፅዖ የለም።",
+    "type_label": "አይነት",
+    "modal_title": "የክስተት ተሳታፊዎች",
+    "no_attendees": "እስካሁን ተሳታፊዎች የሉም።",
+    "close_button": "ዝጋ",
+    "loading": "ክስተቶችን በመጫን ላይ...",
+    "error": "ክስተቶችን በመጫን ላይ ስህተት ተከስቷል።",
+    "toast": {
+      "load_error": "ውሂብ መጫን አልተሳካም።",
+      "events_error": "ክስተቶችን መጫን አልተሳካም።",
+      "members_error": "አባላትን መጫን አልተሳካም።",
+      "attendance_error": "ተሳትፎን መጫን አልተሳካም።"
+    },
+    "feedback": {
+      "title": "አስተያየት ይስጡ",
+      "record": "አስተያየት ይቅረጹ",
+      "stop_recording": "ቀረፃ ያቁሙ",
+      "text_placeholder": "እዚህ አስተያየትዎን ያስገቡ...",
+      "submit": "አስተያየት ያስገቡ",
+      "success": "አስተያየት በተሳካ ሁኔታ ተልኳል!",
+      "error": "አስተያየት መላክ አልተሳካም።",
+      "offline": "አስተያየት ከመስመር ውጭ ተቀምጧል። በመስመር ላይ ሲሆኑ ይመሳሰላል።",
+      "audio_error": "የድምፅ ቀረፃ መጀመር አልተሳካም።",
+      "rating": "ደረጃ",
+      "no_feedback": "እስካሁን ምንም አስተያየት የለም"
+    }
+  },
+
+  "feedback": {
+    "title": "አስተያየቶች",
+    "event": "ክስተት",
+    "member": "አባል",
+    "text": "ጽሑፍ",
+    "no_text": "ምንም ጽሑፍ አልተሰጠም",
+    "rating": "ደረጃ",
+    "no_feedback": "ምንም አስተያየት የለም",
+    "loading": "አስተያየቶችን በመጫን ላይ...",
+    "error": "አስተያየቶችን በመጫን ላይ ስህተት ተከስቷል",
+    "fetch_error": "አስተያየቶችን መግኘት አልተሳካም",
+    "forbidden": "ይህን ገፅ ለመመልከት ፍቃድ የልዎትም"
+  },
+
+  "feedback": {
+    "reply": "መልስ",
+    "add_reply": "መልስ ያክሉ...",
+    "submit_reply": "መልስ",
+    "title": "አስተያየት",
+    "loading": "አስተያየቶችን በመጫን ላይ...",
+    "forbidden": "ይህን ገፅ ለመመልከት ፈቃድ የለዎትም።",
+    "unauthorized": "ፈቃድ የለም። እባክዎ እንደገና ይግቡ።",
+    "fetch_error": "አስተያየቶችን መጫን አልተሳካም። እባክዎ እንደገና ይሞክሩ።",
+    "no_feedback": "ምንም አስተያየት የለም።",
+    "event": "ክስተት",
+    "member": "አባል",
+    "text": "የአስተያየት ጽሑፍ",
+    "no_text": "ምንም ጽሑፍ አልተሰጠም",
+    "rating": "ደረጃ",
+    "retry": "እንደገና ሞክር",
+    "liked": "አስተያየት ተወደደ!",
+    "disliked": "አስተያየት አልተወደደም!",
+    "commented": "አስተያየት ተጨምሯል!",
+    "shared": "አስተያየት ወደ ክሊፕቦርድ ተገልብጧል!",
+    "verified": "የማረጋገጫ ሁኔታ ተዘምኗል!",
+    "action_error": "ተግባር አልተሳካም። እባክዎ እንደገና ይሞክሩ።",
+    "comment_empty": "እባክዎ አስተያየት ከመላክዎ በፊት ይፃፉ።",
+    "sort_by": "መደብ በ",
+    "likes": "መውደዶች",
+    "comments": "አስተያየቶች",
+    "add_comment": "አስተያየት ያክሉ..."
+  },
+
+  
+
+  "login": {
+    "title": "መግባት",
+    "name_label": "ስም",
+    "contact_label": "ግንኙነት",
+    "password_label": "የይለፍ ቃል",
+    "role_label": "ደረጃ",
+    "role_member": "አባል",
+    "role_admin": "አስተዳዳሪ",
+    "login_button": "መግባት",
+    "loading": "በመጫን ላይ...",
+    "no_account": "መለያ የለዎትም?",
+    "register_link": "መመዝገብ",
+    "forgot_contact": "ግንኙነት ረሱ?",
+    "contact_placeholder": "ለምሳሌ፡ 0912345678 ወይም +251912345678",
+    "password_placeholder": "የይለፍ ቃልዎን ያስገቡ",
+    "validation": {
+      "name_required": "ስም ያስፈልጋል",
+      "name_invalid": "ስም ከ2-50 ቁምፊዎች መሆን አለበት እና ፊደሎች፣ ባዶ ቦታዎች፣ መለያዎች ወይም አፖስትሮፊዎች ብቻ መያዝ አለበት",
+      "contact_required": "ግንኙነት ያስፈልጋል",
+      "contact_invalid": "ትክክለኛ የኢትዮጵያ ስልክ ያስገቡ (ለምሳሌ፡ 0912345678 ወይም +251912345678)",
+      "password_required": "የይለፍ ቃል ያስፈልጋል",
+      "password_short": "የይለፍ ቃል ቢያንስ 8 ቁምፊዎች መሆን አለበት",
+      "role_required": "ደረጃ ያስፈልጋል",
+      "role_invalid": "የተመረጠው ደረጃ ልክ አይደለም",
+      "general_error": "መግባት አልተሳካም። እባክዎ እንደገና ይሞክሩ።"
+    }
+  },
+
+  "members": {
+    "title": "የአባላት አስተዳደር",
+    "edit_member": "አባል መቀየር",
+    "name_label": "ስም",
+    "contact_label": "ግንኙነት",
+    "role_label": "ደረጃ",
+    "role_member": "አባል",
+    "role_dagna": "ዳኛ",
+    "role_gebez": "ገበዝ",
+    "role_admin": "አስተዳዳሪ",
+    "update_button": "መዘመን",
+    "cancel_button": "መሰረዝ",
+    "add_member_button": "አባል መጨመር",
+    "search_placeholder": "አባላትን መፈለግ...",
+    "table_name": "ስም",
+    "table_contact": "ግንኙነት",
+    "table_role": "ደረጃ",
+    "table_actions": "ተግባራት",
+    "no_members": "ምንም አባላት አልተገኙም።",
+    "delete_title": "ማስወገድ ማረጋገጫ",
+    "delete_message": "{{name}}ን መሰረዝ መፈለግዎን እርግጠኛ ነዎት? ይህ ተግባር መቀልበስ አይችልም።",
+    "delete_button": "መሰረዝ",
+    "toast": {
+      "load_error": "መረጃ መጫን አልተሳካም። ከመስመር ውጭ ያለውን መረጃ መጠቀም ይቻላል።",
+      "fetch_error": "ከአገልጋይ መግኘት አልተሳካም። ከመስመር ውጭ ያለውን መረጃ መጠቀም።",
+      "update_success": "አባል በተሳካ ሁኔታ ተዘምኗል!",
+      "update_error": "አባል መዘመን አልተሳካም።",
+      "update_offline": "አባል በአካባቢ ተዘምኗል። መስመር ላይ ሲሆን ከኋላ መልማያ ጋር ይመሳሰላል።",
+      "delete_success": "አባል በተሳካ ሁኔታ ተሰርዟል!",
+      "delete_error": "አባል መሰረዝ አልተሳካም።",
+      "delete_offline": "አባል በአካባቢ ተሰርዟል። መስመር ላይ ሲሆን ከኋላ መልማያ ጋር ይመሳሰላል።",
+      "sync_success": "ተጠባቂ ተግባራት ከኋላ መልማያ ጋር ተመሳስለዋል!",
+      "sync_error": "ተጠባቂ ተግባራትን መመሳሰል አልተሳካም።"
+    }
+  },
+
+  "register": {
+    "title": "ለእድር ማህበረሰብ መመዝገብ",
+    "name_label": "ሙሉ ስም",
+    "contact_label": "ስልክ ቁጥር",
+    "password_label": "የይለፍ ቃል",
+    "confirm_password_label": "የይለፍ ቃል ማረጋገጫ",
+    "role_label": "ደረጃ",
+    "role_member": "አባል",
+    "role_admin": "አስተዳዳሪ",
+    "register_button": "መመዝገብ",
+    "loading": "በመጫን ላይ...",
+    "have_account": "መለያ አለዎት?",
+    "login_link": "መግባት",
+    "name_placeholder": "ሙሉ ስምዎን ያስገቡ",
+    "contact_placeholder": "የኢትዮጵያ ስልክ ቁጥርዎን ያስገቡ",
+    "password_placeholder": "የይለፍ ቃልዎን ያስገቡ",
+    "confirm_password_placeholder": "የይለፍ ቃልዎን ያረጋግጡ",
+    "validation": {
+      "name_required": "ስም ያስፈልጋል",
+      "name_invalid": "ስም ከ2-50 ቁምፊዎች መሆን አለበት እና ፊደሎች፣ ባዶ ቦታዎች፣ መለያዎች ወይም አፖስትሮፊዎች ብቻ መያዝ አለበት",
+      "contact_required": "ስልክ ቁጥር ያስፈልጋል",
+      "contact_invalid": "ትክክለኛ የኢትዮጵያ ስልክ ቁጥር ያስገቡ (ለምሳሌ፡ 0912345678 ወይም +251912345678)",
+      "password_required": "የይለፍ ቃል ያስፈልጋል",
+      "password_short": "የይለፍ ቃል ቢያንስ 8 ቁምፊዎች መሆን አለበት",
+      "confirm_password_required": "እባክዎ የይለፍ ቃልዎን ያረጋግጡ",
+      "confirm_password_mismatch": "የይለፍ ቃሎች አይዛመዱም",
+      "role_invalid": "የተመረጠው ደረጃ ልክ አይደለም",
+      "form_errors": "እባክዎ ፎርሙን ከመላክዎ በፊት ስህተቶቹን ያስተካክሉ።",
+      "general_error": "መመዝገብ አልተሳካም። እባክዎ እንደገና ይሞክሩ።",
+      "success": "መመዝገብ ተሳክቷል! ወደ መግቢያ ገፅ መመለስ እንደሚጀመር..."
+    }
+  },
+
+  "forgotContact": {
+    "title": "ግንኙነት መርሳት",
+    "contact_placeholder": "ስልክ ቁጥር",
+    "send_button": "ዳግም ማስጀመሪያ አገናኝ መላክ",
+    "loading": "በመጫን ላይ...",
+    "contact_required": "እባክዎ የእርስዎን ግንኙነት አድራሻ ያስገቡ።",
+    "success_message": "ዳግም ማስጀመሪያ አገናኝ በተሳካ ሁኔታ ተልኳል! በ3 ሰከንዶች ውስጥ መመለስ እንደሚጀመር...",
+    "error_message": "ዳግም ማስጀመሪያ ግንኙነት መላክ አልተሳካም።",
+    "remember_contact": "ግንኙነትዎን ያስታውሱታል?",
+    "login_link": "መግባት"
+  },
+
+  "resetContact": {
+    "title": "ግንኙነት ዳግም ማስጀመር",
+    "new_contact_placeholder": "አዲስ ግንኙነት",
+    "reset_button": "ግንኙነት ዳግም ማስጀመር",
+    "loading": "በመጫን ላይ...",
+    "invalid_token": "ልክ ያልሆነ ወይም የማይገኝ ዳግም ማስጀመሪያ ቶከን። እባክዎ ትክክለኛ ዳግም ማስጀመሪያ አገናኝ ይጠቀሙ።",
+    "no_token": "ይህን ገፅ ለመድረስ ትክክለኛ ዳግም ማስጀመሪያ አገናኝ ይጠቀሙ።",
+    "no_token_submit": "ምንም ዳግም ማስጀመሪያ ቶከን አልተሰጠም።",
+    "contact_short": "ግንኙነት ቢያንስ 6 ቁምፊዎች መሆን አለበት።",
+    "success_message": "ግንኙነት በተሳካ ሁኔታ ዳግም ተጀምሯል! ወደ መግቢያ ገፅ በ3 ሰከንዶች ውስጥ መመለስ እንደሚጀመር...",
+    "error_message": "ግንኙነት ዳግም ማስጀመር አልተሳካም።"
+  },
+
+
+
+  "adminDashboard": {
+    "title": "የአስተዳዳሪ መቆጣጠሪያ",
+    "loading": "መቆጣጠሪያውን በመጫን ላይ...",
+    "error": "የመቆጣጠሪያ መረጃ መጫን አልተሳካም።",
+    "total_events": "ጠቅላላ ክስተቶች",
+    "total_contributions": "ጠቅላላ መዋጮዎች",
+    "total_members": "ጠቅላላ አባላት",
+    "quick_actions": "ፈጣን ተግባራት",
+    "manage_events": "ክስተቶችን መቆጣጠር",
+    "track_contributions": "መዋጮዎችን መከታተል",
+    "add_new_member": "አዲስ አባል መጨመር",
+    "manage_members": "አባላትን መቆጣጠር",
+    "toast": {
+      "error": "የመቆጣጠሪያ መረጃ መጫን አልተሳካም።"
+    }
+  },
+
+  "adminEvents": {
+    "title": "የክስተት አስተዳደር",
+    "loading": "ክስተቶችን በመጫን ላይ...",
+    "error": "መረጃ መጫን አልተሳካም። እባክዎ እንደገና ይሞክሩ።",
+    "add_event": "ክስተት መጨመር",
+    "hide_form": "ፎርም መደበቅ",
+    "create_new_event": "አዲስ ክስተት መፍጠር",
+    "event_name_label": "የክስተት ስም",
+    "event_date_label": "የክስተት ቀን",
+    "description_label": "መግለጫ",
+    "requires_contribution": "መዋጮ ያስፈልጋል",
+    "form_errors": {
+      "name_required": "የክስተት ስም ያስፈልጋል",
+      "date_required": "የክስተት ቀን ያስፈልጋል",
+      "date_past": "ቀኑ ዛሬ ወይም ወደፊት መሆን አለበት",
+      "description_required": "መግለጫ ያስፈልጋል"
+    },
+    "filter_by_contribution": "በመዋጮ መጣራት",
+    "filter_all": "ሁሉም",
+    "filter_yes": "መዋጮ ያስፈልጋል",
+    "filter_no": "መዋጮ አያስፈልግም",
+    "search_label": "በስም ወይም መግለጫ መፈለግ",
+    "upcoming_events": "መጪ ክስተቶች",
+    "past_events": "ያለፉ ክስተቶች",
+    "no_upcoming_events": "ምንም መጪ ክስተቶች አልተገኙም።",
+    "no_past_events": "ምንም ያለፉ ክስተቶች አልተገኙም።",
+    "reason": "ምክንያት:",
+    "attendees": "ተሳታፊዎች:",
+    "attendance": "ተሳትፎ",
+    "view_attendees": "ተሳታፊዎችን መመልከት",
+    "contributions": "መዋጮዎች",
+    "no_contributions": "እስካሁን መዋጮዎች የሉም።",
+    "edit_event": "ክስተት መቀየር",
+    "save_changes": "ለውጦችን መቆጠብ",
+    "cancel": "መሰረዝ",
+    "attendees_modal": "ተሳታፊዎች",
+    "no_attendees": "ለዚህ ክስተት ተሳታፊዎች የሉም።",
+    "close": "መዝጋት",
+    "delete_confirm": "ይህን ክስተት መሰረዝ መፈለግዎን እርግጠኛ ነዎት?",
+    "toast": {
+      "load_error": "መረጃ መጫን አልተሳካም። ከመስመር ውጭ ያለውን መረጃ መጠቀም ይቻላል።",
+      "events_error": "ክስተቶችን መጫን አልተሳካም።",
+      "members_error": "አባላትን መጫን አልተሳካም።",
+      "attendance_error": "ተሳትፎን መጫን አልተሳካም።",
+      "add_success": "ክስተት በተሳካ ሁኔታ ተጨምሯል!",
+      "add_offline": "ክስተት በአካባቢ ተጨምሯል። መስመር ላይ ሲሆን ከኋላ መልማያ ጋር ይመሳሰላል።",
+      "add_error": "ክስተት መጨመር አልተሳካም።",
+      "update_success": "ክስተት በተሳካ ሁኔታ ተዘምኗል!",
+      "update_offline": "ክስተት በአካባቢ ተዘምኗል። መስመር ላይ ሲሆን ከኋላ መልማያ ጋር ይመሳሰላል።",
+      "update_error": "ክስተት መዘመን አልተሳካም።",
+      "update_required": "የክስተት ስም እና ቀን ያስፈልጋሉ።",
+      "delete_success": "ክስተት በተሳካ ሁኔታ ተሰርዟል!",
+      "delete_offline": "ክስተት በአካባቢ ተሰርዟል። መስመር ላይ ሲሆን ከኋላ መልማያ ጋር ይመሳሰላል።",
+      "delete_error": "ክስተት መሰረዝ አልተሳካም።",
+      "attendance_success": "ተሳትፎ ተዘምኗል!",
+      "attendance_offline": "ተሳትፎ በአካባቢ ተዘምኗል። መስመር ላይ ሲሆን ከኋላ መልማያ ጋር ይመሳሰላል።",
+      "sync_success": "የአካባቢ መረጃ ከኋላ መልማያ ጋር ተመሳስሏል!",
+      "sync_error": "የአካባቢ መረጃ ከኋላ መልማያ ጋር መመሳሰል አልተሳካም።"
+    }
+  },
+
+  "features": {
+    "list": [
+      {
+        "id": 1,
+        "title": "ቀላል የአባል አስተዳደር",
+        "description": "አባላትን በቀላሉ መጨመር፣ መቀየር እና መቆጣጠር ይችላሉ።"
+      },
+      {
+        "id": 2,
+        "title": "የአስተዋፅዖ መከታተል",
+        "description": "የአባላት አስተዋፅዖን ይከታተሉ እና ሪፖርቶችን ያመንጩ።"
+      },
+      {
+        "id": 3,
+        "title": "የክስተት እቅድ",
+        "description": "ክስተቶችን ያዘጋጁ እና ተሳትፎን በቀላሉ ይከታተሉ።"
+      }
+    ]
+  },
+  "testimonials": {
+    "fetch_error": "የምስክርነት መግለጫዎችን መጫን አልተሳካም"
+  },
+
+
+
+  "privacy": {
+    "meta_title": "የግላዊነት መመሪያ - እድር ኮኔክት",
+    "meta_description": "እድር ኮኔክት የእርስዎን ግላዊነት እንዴት እንደሚጠብቅ እና የእርስዎን መረጃ እንደሚያስተዳድር ይወቁ።",
+    "title": "የግላዊነት መመሪያ",
+    "subtitle": "የእርስዎ ግላዊነት ለእኛ አስፈላጊ ነው። የእርስዎን መረጃ እንዴት እንደምንጠብቅ ይወቁ።",
+    "sections": [
+      {
+        "title": "የመረጃ መሰብሰብ",
+        "content": "አገልግሎታችንን ለመስጠት የሚያስፈልገውን መረጃ ብቻ እንሰበስባለን። ይህም ስምዎን፣ ኢሜልዎን እና የግንኙነት ዝርዝሮችን ያካትታል።"
+      },
+      {
+        "title": "የመረጃ አጠቃቀም",
+        "content": "የእርስዎ መረጃ የእድር ማህበረሰብዎን ለመቆጣጠር እና አገልግሎታችንን ለማሻሻል ብቻ ይጠቅማል።"
+      },
+      {
+        "title": "የመረጃ ጥበቃ",
+        "content": "የእርስዎን መረጃ ለመጠበቅ የኢንዱስትሪ መለኪያ መመስጠሪያ እና የደህንነት እርምጃዎችን እንጠቀማለን።"
+      }
+    ],
+    "last_updated_label": "መጨረሻ የተሻሻለ",
+    "last_updated": "ማርች 14፣ 2025",
+    "contact_prompt": "ለማንኛውም የግላዊነት ጥያቄዎች፣ እባክዎ",
+    "contact_link": "ያግኙን",
+    "contact_email": "privacy@edirconnect.com",
+    "download_button": "ፒዲኤፍ አውርድ"
+  },
+
+  "notfound": {
+    "title": "404",
+    "subtitle": "ገፅ አልተገኘም",
+    "message": "ይቅርታ፣ የምትፈልገው ገፅ የለም ወይም ተዛውሯል።",
+    "go_back": "ወደ መነሻ ተመለስ"
+  }
+}

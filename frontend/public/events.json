@@ -1,0 +1,47 @@
+[
+  {
+    "_id": { "$oid": "67cd660aebb62e3a93b1a419" },
+    "name": "Funeral for Ato Kebede",
+    "date": { "$date": "2025-04-01T09:00:00.000Z" },
+    "description": "A gathering to mourn and support the family of Ato Kebede, who passed away last week. Contributions are requested to assist with funeral expenses.",
+    "requiresContribution": true,
+    "attendees": [],
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "67cd660aebb62e3a93b1a420" },
+    "name": "Annual Edir General Meeting",
+    "date": { "$date": "2025-05-15T14:00:00.000Z" },
+    "description": "Yearly meeting to discuss Edir finances, upcoming events, and community support plans. All members are encouraged to attend.",
+    "requiresContribution": false,
+    "attendees": [],
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "67cd660aebb62e3a93b1a421" },
+    "name": "Memorial for W/ro Alemnesh",
+    "date": { "$date": "2025-06-10T10:00:00.000Z" },
+    "description": "A memorial service to honor W/ro Alemnesh on the one-year anniversary of her passing. Contributions will support her family.",
+    "requiresContribution": true,
+    "attendees": [],
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "67cd660aebb62e3a93b1a422" },
+    "name": "Support Event for Ato Tadesse’s Family",
+    "date": { "$date": "2025-07-20T13:00:00.000Z" },
+    "description": "Ato Tadesse’s family has faced a recent hardship. This event is to collect contributions and provide communal support.",
+    "requiresContribution": true,
+    "attendees": [],
+    "__v": 0
+  },
+  {
+    "_id": { "$oid": "67cd660aebb62e3a93b1a423" },
+    "name": "Edir Founding Anniversary Celebration",
+    "date": { "$date": "2025-08-05T16:00:00.000Z" },
+    "description": "Celebrating 10 years of our Edir’s establishment with food, music, and community bonding. No contributions required.",
+    "requiresContribution": false,
+    "attendees": [],
+    "__v": 0
+  }
+]

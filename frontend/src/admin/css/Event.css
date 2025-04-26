@@ -1,0 +1,702 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.events {
+  padding: 20px;
+  background: linear-gradient(135deg, #f4f4f4 0%, #e0e0e0 100%);
+  min-height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #2e7d32; /* Ethiopian green */
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Styling for the Add Event Button */
+.MuiButton-containedPrimary {
+  background: #2e7d32;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  text-transform: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.MuiButton-containedPrimary:hover {
+  background: #1b5e20;
+  transform: translateY(-2px);
+}
+
+/* Event Form Styling (Material-UI) */
+.event-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto 40px;
+  border-left: 5px solid #ffc107; /* Ethiopian yellow */
+}
+
+.event-form .MuiTypography-h6 {
+  color: #d32f2f; /* Ethiopian red */
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.event-form .MuiTextField-root {
+  margin-bottom: 15px;
+}
+
+.event-form .MuiOutlinedInput-root {
+  border-radius: 8px;
+}
+
+.event-form .MuiOutlinedInput-notchedOutline {
+  border-color: #e0e0e0;
+}
+
+.event-form .Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #2e7d32;
+}
+
+.event-form .MuiInputLabel-root {
+  color: #616161;
+}
+
+.event-form .MuiInputLabel-root.Mui-focused {
+  color: #2e7d32;
+}
+
+.event-form .MuiFormHelperText-root {
+  color: #d32f2f;
+}
+
+.event-form .MuiCheckbox-root {
+  color: #2e7d32;
+}
+
+.event-form .MuiCheckbox-root.Mui-checked {
+  color: #2e7d32;
+}
+
+.event-form .MuiButton-containedPrimary {
+  width: 100%;
+  margin-top: 15px;
+}
+
+/* Filter and Search Section (Material-UI) */
+.filter-search {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Reduced from 20px for tighter spacing on small screens */
+  justify-content: center;
+  margin-bottom: 30px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; /* Ensure it takes full available width */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.filter-search .MuiFormControl-root {
+  flex: 1 1 100%; /* Default to full width on small screens */
+  min-width: 0; /* Allow shrinking below default min-width */
+}
+
+.filter-search .MuiTextField-root {
+  flex: 1 1 100%; /* Default to full width on small screens */
+  min-width: 0; /* Allow shrinking below default min-width */
+}
+
+.filter-search .MuiSelect-root,
+.filter-search .MuiTextField-root .MuiOutlinedInput-root {
+  width: 100%; /* Ensure inputs take full width of their container */
+  box-sizing: border-box; /* Include padding/border in width */
+}
+
+.filter-search .MuiInputLabel-root {
+  display: filter-search;
+  align-items: center;
+  gap: 10px;
+  color: #424242;
+  font-size: 1rem; /* Ensure label font size doesn’t force overflow */
+  white-space: nowrap; /* Prevent label wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Truncate long labels */
+}
+
+.filter-search .MuiOutlinedInput-notchedOutline {
+  border-color: #e0e0e0;
+}
+
+.filter-search .Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #2e7d32;
+}
+
+.filter-search .fa-filter,
+.filter-search .fa-search {
+  color: #ffc107; /* Ethiopian yellow */
+  font-size: 1.2rem;
+  flex-shrink: 0; /* Prevent icons from shrinking */
+}
+
+.event-list {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.event-list h2 {
+  color: #ffc107; /* Ethiopian yellow */
+  font-size: 2rem;
+  margin: 0 0 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.event-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #d32f2f; /* Ethiopian red */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 calc(50% - 25px);
+}
+
+.event-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.event-actions {
+  display: flex;
+  gap: 10px;
+  position: relative; /* For tooltip positioning */
+}
+
+.edit-button,
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+  position: relative; /* For tooltip */
+}
+
+.edit-button {
+  color: #007bff;
+}
+
+.delete-button {
+  color: #dc3545;
+}
+
+.edit-button:hover,
+.edit-button:focus {
+  color: #0056b3;
+  outline: none;
+}
+
+.delete-button:hover,
+.delete-button:focus {
+  color: #a71d2a;
+  outline: none;
+}
+
+/* Tooltip Styles */
+.edit-button[data-tooltip]:hover::after,
+.delete-button[data-tooltip]:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  z-index: 10;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.edit-button[data-tooltip]::after,
+.delete-button[data-tooltip]::after {
+  opacity: 0;
+}
+
+/* Modal Styles */
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.edit-modal {
+  max-width: 500px;
+}
+
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal h2 {
+  color: #d32f2f;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.modal .MuiTextField-root {
+  margin-bottom: 15px;
+}
+
+.modal .MuiOutlinedInput-notchedOutline {
+  border-color: #e0e0e0;
+}
+
+.modal .Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #2e7d32;
+}
+
+.modal .MuiInputLabel-root {
+  color: #616161;
+}
+
+.modal .MuiInputLabel-root.Mui-focused {
+  color: #2e7d32;
+}
+
+.modal .MuiCheckbox-root {
+  color: #2e7d32;
+}
+
+.modal .MuiCheckbox-root.Mui-checked {
+  color: #2e7d32;
+}
+
+.modal .MuiButton-containedPrimary {
+  background: #2e7d32;
+  margin-top: 10px;
+}
+
+.modal .MuiButton-outlined {
+  border-color: #2e7d32;
+  color: #2e7d32;
+  margin-top: 10px;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.event-card h3 {
+  color: #2e7d32;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  word-break: break-word;
+}
+
+.event-card p {
+  color: #616161;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.event-description {
+  max-height: 80px;
+  overflow-y: auto;
+  word-wrap: break-word;
+  padding-right: 10px;
+  flex-grow: 1;
+}
+
+.event-icon {
+  color: #ffc107;
+  margin-right: 8px;
+  font-size: 1.5rem;
+}
+
+.member-list {
+  margin-top: 15px;
+  max-height: 250px;
+  overflow-y: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+  background: #fafafa;
+}
+
+.member-list::-webkit-scrollbar,
+.event-description::-webkit-scrollbar,
+.contributions-list::-webkit-scrollbar,
+.modal ul::-webkit-scrollbar {
+  width: 8px;
+}
+
+.member-list::-webkit-scrollbar-thumb,
+.event-description::-webkit-scrollbar-thumb,
+.contributions-list::-webkit-scrollbar-thumb,
+.modal ul::-webkit-scrollbar-thumb {
+  background: #2e7d32;
+  border-radius: 4px;
+}
+
+.member-list::-webkit-scrollbar-track,
+.event-description::-webkit-scrollbar-track,
+.contributions-list::-webkit-scrollbar-track,
+.modal ul::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+.member-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.member-list-item:last-child {
+  border-bottom: none;
+}
+
+.member-list-item span {
+  color: #424242;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.attendance-section {
+  margin-top: 15px;
+}
+
+.attendance-section h4 {
+  color: #2e7d32;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.attendance-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.attendance-checkbox input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #2e7d32;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+.attendance-checkbox input:checked {
+  background: #2e7d32;
+}
+
+.attendance-checkbox input:checked::after {
+  content: '\f00c';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+}
+
+.attendance-checkbox input:disabled {
+  border-color: #999;
+  background: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.view-attendees-button {
+  background: #d32f2f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.view-attendees-button:hover {
+  background: #b71c1c;
+  transform: scale(1.05);
+}
+
+.contributions {
+  margin-top: 15px;
+  flex-grow: 1;
+}
+
+.contributions h4 {
+  color: #2e7d32;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.contributions-list {
+  max-height: 350px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.contribution-item {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.contribution-item p {
+  margin-bottom: 5px;
+}
+
+.contribution-item p:last-child {
+  margin-bottom: 0;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 50px;
+  color: #616161;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading .MuiCircularProgress-root {
+  color: #ffc107;
+}
+
+.modal ul {
+  list-style: none;
+  margin-bottom: 20px;
+  max-height: 50vh;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.modal ul li {
+  padding: 10px 0;
+  color: #424242;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.modal ul li:last-child {
+  border-bottom: none;
+}
+
+.close-modal-button {
+  background: #2e7d32;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  align-self: flex-end;
+}
+
+.close-modal-button:hover {
+  background: #1b5e20;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (min-width: 1200px) {
+  .event-card {
+    flex: 1 1 calc(33.333% - 25px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .event-card {
+    flex: 1 1 calc(50% - 25px);
+  }
+}
+
+@media (min-width: 768px) {
+  .filter-search .MuiFormControl-root {
+    flex: 1 1 300px; /* Restore original flex behavior on larger screens */
+  }
+
+  .filter-search .MuiTextField-root {
+    flex: 1 1 300px; /* Restore original flex behavior on larger screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .events {
+    padding: 15px;
+  }
+
+  .event-form {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .event-card {
+    flex: 1 1 100%;
+    min-height: 350px;
+  }
+
+  .filter-search {
+    padding: 10px;
+    gap: 10px; /* Further reduce gap for small screens */
+  }
+
+  .filter-search .MuiInputLabel-root {
+    font-size: 0.9rem; /* Slightly smaller font for labels */
+  }
+
+  .filter-search .MuiSelect-root,
+  .filter-search .MuiTextField-root .MuiOutlinedInput-root {
+    font-size: 0.9rem; /* Reduce input font size */
+    padding: 8px; /* Adjust padding for compactness */
+  }
+
+  .member-list {
+    max-height: 200px;
+  }
+
+  .contributions-list {
+    max-height: 150px;
+  }
+
+  .event-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .event-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .event-form .MuiTypography-h6,
+  .modal h2 {
+    font-size: 1.5rem;
+  }
+
+  .event-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .event-card p {
+    font-size: 0.9rem;
+  }
+
+  .member-list {
+    max-height: 180px;
+  }
+
+  .contributions-list {
+    max-height: 120px;
+  }
+
+  .member-list-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+  }
+
+  .attendance-checkbox {
+    margin-top: 8px;
+  }
+
+  .filter-search {
+    padding: 8px;
+    gap: 8px;
+  }
+
+  .filter-search .MuiInputLabel-root {
+    font-size: 0.85rem;
+  }
+
+  .filter-search .MuiSelect-root,
+  .filter-search .MuiTextField-root .MuiOutlinedInput-root {
+    font-size: 0.85rem;
+    padding: 6px;
+  }
+
+  .filter-search .fa-filter,
+  .filter-search .fa-search {
+    font-size: 1rem; /* Slightly smaller icons */
+  }
+
+  .edit-button,
+  .delete-button {
+    font-size: 1rem;
+    padding: 6px;
+  }
+
+  .edit-button[data-tooltip]:hover::after,
+  .delete-button[data-tooltip]:hover::after {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+}

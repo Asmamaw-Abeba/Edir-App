@@ -1,0 +1,88 @@
+/* src/components/css/LanguageSwitcher.css */
+.language-switcher {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.switcher-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #3a3f4a, #1e2127); /* Darker gradient */
+  color: white;
+  border-radius: 25px; /* Rounded pill shape */
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.switcher-button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.flag {
+  font-size: 1.2rem;
+}
+
+.language-name {
+  flex-grow: 1;
+}
+
+.dropdown-arrow {
+  font-size: 0.8rem;
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  padding: 0;
+  min-width: 150px;
+  overflow: hidden;
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.language-option:hover {
+  background-color: #f0f0f0;
+}
+
+.language-option.active {
+  background-color: #e6f0ff;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .language-switcher {
+    top: 10px;
+    right: 10px;
+  }
+
+  .switcher-button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  .language-dropdown {
+    min-width: 120px;
+  }
+}

@@ -1,0 +1,118 @@
+/* src/pages/css/ForgotContact.css */
+
+.forgot-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+.forgot-contact h1 {
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2em;
+  color: #ffc107; /* Ethiopian flag yellow */
+}
+
+.forgot-contact form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+.forgot-contact input[type="text"] {
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.forgot-contact button {
+  padding: 12px 20px;
+  background-color: #4CAF50; /* Ethiopian flag green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.forgot-contact button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+
+.forgot-contact button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.forgot-contact .error,
+.forgot-contact .message {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.forgot-contact .error {
+  background-color: #ffebee;
+  color: #d32f2f; /* Ethiopian flag red (darker shade) */
+  border: 1px solid #ef9a9a;
+}
+
+.forgot-contact .message {
+  background-color: #e8f5e9;
+  color: #4CAF50; /* Ethiopian flag green */
+  border: 1px solid #a5d6a7;
+}
+
+.forgot-contact p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.forgot-contact p a {
+  color: #1976d2; /* Link color */
+  text-decoration: none;
+}
+
+forgot-contact p a:hover {
+  text-decoration: underline;
+}
+
+/* Loading spinner */
+.forgot-contact button svg {
+  margin-right: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .forgot-contact h1 {
+    font-size: 1.8em;
+  }
+
+  .forgot-contact input[type="email"],
+  .forgot-contact button {
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+
+  .forgot-contact .error,
+  .forgot-contact .message,
+  .forgot-contact p {
+    font-size: 15px;
+  }
+}

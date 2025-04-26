@@ -1,0 +1,8 @@
+src/
+  components/
+  pages/
+  services/
+  store/
+  hooks/
+  utils/
+  assets/

@@ -1,0 +1,179 @@
+/* AdminDashboard.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dashboard {
+  padding: 20px;
+  background: linear-gradient(135deg, #f4f4f4 0%, #e0e0e0 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #2e7d32; /* Ethiopian green */
+  font-weight: 600;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.dashboard-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  cursor: pointer;
+  border-left: 4px solid #ffc107; /* Ethiopian yellow */
+  transition: transform 0.3s ease;
+}
+
+.stat-card h2 {
+  color: #2e7d32;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  color: #616161;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.stat-icon {
+  color: #d32f2f; /* Ethiopian red */
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.quick-actions {
+  width: 100%;
+  max-width: 800px;
+}
+
+.quick-actions h2 {
+  color: #ffc107;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.action-button {
+  background: #2e7d32;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.action-button:hover {
+  background: #1b5e20;
+  transform: translateY(-2px);
+}
+
+.dashboard.loading,
+.dashboard.error {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.5rem;
+  color: #616161;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .stat-card {
+    width: 200px;
+  }
+
+  .stat-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .stat-card p {
+    font-size: 1.8rem;
+  }
+
+  .stat-icon {
+    font-size: 2rem;
+  }
+
+  .quick-actions h2 {
+    font-size: 1.8rem;
+  }
+
+  .action-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .stat-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .stat-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .stat-card p {
+    font-size: 1.5rem;
+  }
+
+  .stat-icon {
+    font-size: 1.8rem;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .action-button {
+    width: 100%;
+    max-width: 300px;
+    font-size: 1rem;
+    padding: 12px;
+  }
+}

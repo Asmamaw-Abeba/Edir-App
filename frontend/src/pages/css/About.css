@@ -1,0 +1,72 @@
+.about {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.about-hero {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  color: white;
+  padding: 100px 20px;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+}
+
+.mission {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.mission h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.mission p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.team {
+  padding: 60px 20px;
+  background: white;
+}
+
+.team h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.member {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  margin: 10px;
+}
+
+.member h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.member p {
+  font-size: 1rem;
+  color: #555;
+}
