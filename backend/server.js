@@ -14,14 +14,66 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 
-// Configure CORS to allow requests from your frontend
+// Define allowed origins based on environment
+const allowedOrigins = [
+  'http://10.235.50.49:3000', // Local dev frontend
+  'http://localhost:3000', // Local dev frontend (alternative)
+  process.env.FRONTEND_URL || 'https://edirapp.onrender.com', // Production frontend URL (set in Render)
+];
+
+// Advanced CORS configuration
 const corsOptions = {
-  origin: 'http://10.235.50.49:3000', // Specify the exact frontend origin
-  credentials: true, // Allow credentials (cookies, authorization headers, etc.)
-  optionsSuccessStatus: 200 // For legacy browser support
+  // Dynamically validate the origin
+  origin: (origin, callback) => {
+    // Allow requests with no origin (e.g., mobile apps or curl)
+    if (!origin) return callback(null, true);
+
+    // Check if the origin is in the allowed list
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
+
+    // Log and reject unauthorized origins
+    console.warn(`CORS policy violation: Origin ${origin} not allowed`);
+    return callback(new Error('Not allowed by CORS'));
+  },
+
+  // Allow credentials (e.g., cookies, authorization headers)
+  credentials: true,
+
+  // Specify allowed methods
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+
+  // Specify allowed headers
+  allowedHeaders: [
+    'Content-Type',
+    'Authorization',
+    'X-Requested-With',
+    'Accept',
+    'Origin',
+  ],
+
+  // Specify headers to expose to the client
+  exposedHeaders: ['X-Total-Count', 'Content-Range'],
+
+  // Handle preflight requests (OPTIONS)
+  optionsSuccessStatus: 200, // For legacy browser support
+
+  // Set max age for preflight request caching (in seconds)
+  maxAge: 86400, // 24 hours
 };
 
-app.use(cors(corsOptions));
+// Apply CORS middleware with error handling
+app.use((req, res, next) => {
+  cors(corsOptions)(req, res, (err) => {
+    if (err) {
+      // Log the CORS error for debugging
+      console.error('CORS Error:', err.message);
+      return res.status(403).json({ error: 'CORS policy violation' });
+    }
+    next();
+  });
+});
 
 // app.use(cors());
 app.use(express.json());
