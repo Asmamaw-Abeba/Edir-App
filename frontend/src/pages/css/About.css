@@ -1,32 +1,54 @@
+/* General Styles */
 .about {
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 20px;
+  line-height: 1.6;
 }
 
 .about-hero {
   background: linear-gradient(to right, #4e54c8, #8f94fb);
   color: white;
-  padding: 100px 20px;
+  padding: 80px 20px;
 }
 
 .about-hero h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
 .about-hero p {
   font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
+.about-hero .cta-button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.about-hero .cta-button:hover {
+  background-color: #e65a50;
+}
+
+/* Mission Section */
 .mission {
   padding: 60px 20px;
   background: #f9f9f9;
 }
 
 .mission h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 20px;
+  color: #333;
 }
 
 .mission p {
@@ -36,20 +58,23 @@
   margin: 0 auto;
 }
 
+/* Team Section */
 .team {
   padding: 60px 20px;
   background: white;
 }
 
 .team h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 40px;
+  color: #333;
 }
 
 .team-members {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .member {
@@ -57,16 +82,79 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 30%;
-  margin: 10px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .member h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  color: #4e54c8;
 }
 
 .member p {
   font-size: 1rem;
   color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .about-hero p {
+    font-size: 1rem;
+  }
+
+  .mission h2,
+  .team h2 {
+    font-size: 1.8rem;
+  }
+
+  .mission p,
+  .team p {
+    font-size: 1rem;
+  }
+
+  .team-members {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .member {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-hero p {
+    font-size: 0.9rem;
+  }
+
+  .mission h2,
+  .team h2 {
+    font-size: 1.5rem;
+  }
+
+  .mission p,
+  .team p {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
 }
