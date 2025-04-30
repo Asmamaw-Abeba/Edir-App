@@ -1,7 +1,7 @@
 {
   "short_name": "እድር",
   "name": "እድር - የክስተት መቆጣጠሪያ",
-  "description": "EdirConnect is a web application designed to streamline event management, making it easier for users to create, manage, and share events.",
+  "description": "EdirConnect is a web application designed to streamline event management, making it easier for users to create, manage, and share events. እድር የዝግጅት አደረጃጀትን ለማቀላጠፍ የተነደፈ የድር መተግበሪያ ሲሆን፣ ተጠቃሚዎች ዝግጅቶችን መፍጠር፣ መቆጣጠር እና መጋራት ቀላል ያደርገዋል፡፡",
   "icons": [
     {
       "src": "favicon.ico",

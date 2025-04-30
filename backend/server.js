@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 5000;
 
 // Define allowed origins
 const allowedOrigins = [
-  'http://10.235.50.49:3000', // Local dev frontend
+  'http://10.235.50.143:3000', // Local dev frontend
   'http://localhost:3000', // Local dev frontend (alternative)
   process.env.FRONTEND_URL || 'https://your-frontend.onrender.com', // Production frontend URL
 ];
