@@ -17,7 +17,9 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       console.log('[Service Worker] Caching static assets');
-      return cache.addAll(urlsToCache);
+      return cache.addAll(urlsToCache).catch((error) => {
+        console.error('[Service Worker] Failed to cache resources:', error);
+      });
     })
   );
   self.skipWaiting(); // Activate the service worker immediately
