@@ -28,7 +28,7 @@ self.addEventListener('install', (event) => {
 
 
 self.addEventListener('fetch', (event) => {
-  console.log('[Service Worker] Fetch event for', event.request.url);
+  // console.log('[Service Worker] Fetch event for', event.request.url);
 
   // Only handle GET requests
   if (event.request.method !== 'GET') {
@@ -42,7 +42,7 @@ self.addEventListener('fetch', (event) => {
         // console.log('[Service Worker] Serving from cache:', event.request.url);
         return response; // Return cached response
       }
-      console.log('[Service Worker] Fetching from network:', event.request.url);
+      // console.log('[Service Worker] Fetching from network:', event.request.url);
       return fetch(event.request)
         .then((networkResponse) => {
           // Only cache valid responses (status 200–299) and avoid partial responses (206)
