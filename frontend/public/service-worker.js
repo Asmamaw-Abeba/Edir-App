@@ -2,8 +2,9 @@ const CACHE_NAME = 'app-cache-v2'; // Increment version for updates
 const urlsToCache = [
   '/',
   '/index.html',
-  '/index.css',
-  '/index.js',
+  '/logo192.png',
+  '/logo512.png',
+  '/manifest.json',
   '/favicon.ico',
   '/offline.html', // Offline fallback page
 ];
