@@ -19,7 +19,7 @@ self.addEventListener('install', (event) => {
     caches.open(CACHE_NAME).then((cache) => {
       // console.log('[Service Worker] Caching static assets');
       return cache.addAll(urlsToCache).catch((error) => {
-        console.error('[Service Worker] Failed to cache resources:', error);
+        // console.error('[Service Worker] Failed to cache resources:', error);
       });
     })
   );
@@ -32,14 +32,14 @@ self.addEventListener('fetch', (event) => {
 
   // Only handle GET requests
   if (event.request.method !== 'GET') {
-    console.log('[Service Worker] Skipping non-GET request:', event.request.method, event.request.url);
+    // console.log('[Service Worker] Skipping non-GET request:', event.request.method, event.request.url);
     return;
   }
 
   event.respondWith(
     caches.match(event.request).then((response) => {
       if (response) {
-        console.log('[Service Worker] Serving from cache:', event.request.url);
+        // console.log('[Service Worker] Serving from cache:', event.request.url);
         return response; // Return cached response
       }
       console.log('[Service Worker] Fetching from network:', event.request.url);
@@ -47,7 +47,7 @@ self.addEventListener('fetch', (event) => {
         .then((networkResponse) => {
           // Only cache valid responses (status 200–299) and avoid partial responses (206)
           if (!networkResponse || !networkResponse.ok || networkResponse.status === 206) {
-            console.warn('[Service Worker] Not caching invalid or partial response:', event.request.url);
+            // console.warn('[Service Worker] Not caching invalid or partial response:', event.request.url);
             return networkResponse;
           }
           return caches.open(CACHE_NAME).then((cache) => {
