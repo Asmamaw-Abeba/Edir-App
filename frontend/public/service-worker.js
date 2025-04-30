@@ -26,6 +26,7 @@ self.addEventListener('install', (event) => {
   self.skipWaiting(); // Activate the service worker immediately
 });
 
+
 // Fetch event
 self.addEventListener('fetch', (event) => {
   console.log('[Service Worker] Fetch event for', event.request.url);
@@ -38,7 +39,11 @@ self.addEventListener('fetch', (event) => {
       console.log('[Service Worker] Fetching from network:', event.request.url);
       return fetch(event.request)
         .then((networkResponse) => {
-          // Dynamically cache the fetched response
+          // Only cache valid responses (status 200–299) and avoid partial responses (206)
+          if (!networkResponse || !networkResponse.ok || networkResponse.status === 206) {
+            console.warn('[Service Worker] Not caching invalid or partial response:', event.request.url);
+            return networkResponse;
+          }
           return caches.open(CACHE_NAME).then((cache) => {
             cache.put(event.request, networkResponse.clone());
             limitCacheSize(CACHE_NAME, MAX_DYNAMIC_CACHE_ITEMS); // Enforce cache size limit
