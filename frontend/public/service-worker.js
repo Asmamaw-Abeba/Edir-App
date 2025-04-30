@@ -17,7 +17,7 @@ self.addEventListener('install', (event) => {
   console.log('[Service Worker] Install event');
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      console.log('[Service Worker] Caching static assets');
+      // console.log('[Service Worker] Caching static assets');
       return cache.addAll(urlsToCache).catch((error) => {
         console.error('[Service Worker] Failed to cache resources:', error);
       });
@@ -29,14 +29,14 @@ self.addEventListener('install', (event) => {
 
 // Fetch event
 self.addEventListener('fetch', (event) => {
-  console.log('[Service Worker] Fetch event for', event.request.url);
+  // console.log('[Service Worker] Fetch event for', event.request.url);
   event.respondWith(
     caches.match(event.request).then((response) => {
       if (response) {
-        console.log('[Service Worker] Serving from cache:', event.request.url);
+        // console.log('[Service Worker] Serving from cache:', event.request.url);
         return response; // Return cached response
       }
-      console.log('[Service Worker] Fetching from network:', event.request.url);
+      // console.log('[Service Worker] Fetching from network:', event.request.url);
       return fetch(event.request)
         .then((networkResponse) => {
           // Only cache valid responses (status 200–299) and avoid partial responses (206)
