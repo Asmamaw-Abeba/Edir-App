@@ -41,7 +41,8 @@ self.addEventListener('fetch', (event) => {
         .then((networkResponse) => {
           // Only cache valid responses (status 200–299) and avoid partial responses (206)
           if (!networkResponse || !networkResponse.ok || networkResponse.status === 206) {
-            console.warn('[Service Worker] Not caching invalid or partial response:', event.request.url);
+            return; // Skip caching for invalid or partial responses
+            // console.warn('[Service Worker] Not caching invalid or partial response:', event.request.url);
             return networkResponse;
           }
           return caches.open(CACHE_NAME).then((cache) => {
